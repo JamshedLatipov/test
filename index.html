@@ -1,0 +1,64 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/button.css" />
+    <link rel="stylesheet" href="styles/card.css" />
+    <title>BIMeister</title>
+  </head>
+  <body>
+    <section class="welcome">
+      <button onclick="main.start()" class="button fill">Старт</button>
+    </section>
+
+    <section class="home destroy">
+      <div class="home__header">
+        <div>
+          <div class="home__header--title"></div>
+        </div>
+        <button class="home__header--back" onclick="main.back()">
+          Вернуться к кнопке
+        </button>
+      </div>
+
+      <div class="home__cards">
+        <article class="card__container">
+          <div class="card" data-link="https://npmjs.org">
+            <div class="card__title">Title1</div>
+            <div class="card__subtitle">subtitle</div>
+            <div class="card__description">some description</div>
+          </div>
+        </article>
+        <article class="card__container">
+          <div class="card" data-link="https://npmjs.org">
+            <div class="card__title">Title2</div>
+            <div class="card__subtitle">subtitle</div>
+            <div class="card__description">some description</div>
+          </div>
+        </article>
+        <article class="card__container">
+          <div class="card" data-link="https://npmjs.org">
+            <div class="card__title">Title3</div>
+            <div class="card__subtitle">subtitle</div>
+            <div class="card__description">some description</div>
+          </div>
+        </article>
+        <article class="card__container">
+          <div class="card" data-link="https://npmjs.org">
+            <div class="card__title">Title4</div>
+            <div class="card__subtitle">subtitle</div>
+            <div class="card__description">some description</div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <div id="modal"></div>
+
+    <script src="scripts/main.js"></script>
+    <script src="scripts/card.js"></script>
+  </body>
+</html>
